@@ -6,4 +6,3 @@ print(dados)
 
 media = dados.groupby('Tipo')[['Valor']].mean().sort_values('Valor')
 grafico = media.plot(figsize=(14, 10), color ='purple')
-grafico.set_visible()
